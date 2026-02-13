@@ -1,0 +1,82 @@
+/* Existing Styles (unchanged) */
+.mu-container {
+  margin-top: 50px;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.mu-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #343a40;
+  text-align: center;
+}
+
+.mu-table-wrapper {
+  background: transparent;
+}
+
+.mu-table {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mu-delete-btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.mu-delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Small devices (phones, 0-576px) */
+@media (max-width: 576px) {
+  .mu-container {
+    padding: 10px; /* Reduce padding on small screens */
+  }
+
+  .mu-title {
+    font-size: 18px; /* Slightly smaller title */
+  }
+
+  .mu-table {
+    font-size: 14px; /* Smaller table text */
+    overflow-x: auto; /* Allow horizontal scroll if table too wide */
+  }
+
+  .mu-delete-btn {
+    padding: 3px 10px; /* Smaller button */
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 577px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .mu-container {
+    padding: 15px;
+  }
+
+  .mu-title {
+    font-size: 20px;
+  }
+
+  .mu-table {
+    font-size: 14px;
+  }
+
+  .mu-delete-btn {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Large devices (desktops, 769px and above) */
+@media (min-width: 769px) {
+  /* You can optionally add tweaks for larger screens if needed */
+}

@@ -1,0 +1,291 @@
+/* ===== PAGE WRAPPER ===== */
+.edit-property-page {
+  padding: 40px 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ===== FORM CARD ===== */
+.edit-property-form {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== HEADINGS ===== */
+.edit-property-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.edit-property-form h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ===== INPUTS ===== */
+.form-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff385c;
+  box-shadow: 0 0 0 3px rgba(255, 56, 92, 0.15);
+}
+
+/* ===== FILE INPUT ===== */
+.form-input[type="file"] {
+  padding: 6px;
+  border: none;
+}
+
+/* ===== AMENITIES ===== */
+.amenities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.amenity-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f9fa;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.amenity-option:hover {
+  background: #fff;
+  border-color: #ff385c;
+  box-shadow: 0 6px 15px rgba(255, 56, 92, 0.15);
+}
+
+.amenity-option input {
+  accent-color: #ff385c;
+}
+
+.amenity-option img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== BUTTON ===== */
+.update-btn {
+  display: block;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #ff385c, #ff5a5f);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 56, 92, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .edit-property-form {
+    padding: 25px;
+  }
+
+  .form-input {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .edit-property-page {
+    padding: 20px 10px;
+  }
+
+  .edit-property-form {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .edit-property-page h1 {
+    font-size: 22px;
+  }
+
+  .edit-property-form h3 {
+    font-size: 16px;
+  }
+
+  .amenities-container {
+    grid-template-columns: 1fr;
+  }
+
+  .update-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+/* ===== GLOBAL STYLES (Already present) ===== */
+/* Keep all your existing CSS here */
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Large Desktops / 1200px+ */
+@media (min-width: 1200px) {
+  .edit-property-form {
+    max-width: 1000px; /* Slightly bigger for large screens */
+    padding: 35px;
+  }
+
+  .amenities-container {
+    gap: 15px;
+  }
+
+  .update-btn {
+    font-size: 17px;
+    padding: 16px 32px;
+  }
+}
+
+/* Desktops / Laptops 992px - 1199px */
+/* Already partially handled, just ensuring design remains consistent */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .edit-property-form {
+    max-width: 900px;
+    padding: 28px;
+  }
+
+  .update-btn {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}
+
+/* Tablets 768px - 991px */
+@media (max-width: 991px) and (min-width: 768px) {
+  .edit-property-form {
+    padding: 25px;
+  }
+
+  .form-input {
+    max-width: 100%;
+  }
+
+  .amenities-container {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .update-btn {
+    font-size: 15px;
+    padding: 14px 28px;
+  }
+}
+
+/* Small Tablets / Large Phones 576px - 767px */
+@media (max-width: 767px) and (min-width: 577px) {
+  .edit-property-form {
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .edit-property-page h1 {
+    font-size: 24px;
+  }
+
+  .edit-property-form h3 {
+    font-size: 17px;
+  }
+
+  .amenities-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+
+  .update-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
+/* Mobile Devices <= 576px */
+/* Already handled in your CSS, just double-check */
+@media (max-width: 576px) {
+  .edit-property-page {
+    padding: 20px 10px;
+  }
+
+  .edit-property-form {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .edit-property-page h1 {
+    font-size: 22px;
+  }
+
+  .edit-property-form h3 {
+    font-size: 16px;
+  }
+
+  .amenities-container {
+    grid-template-columns: 1fr;
+  }
+
+  .update-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+/* Extra small phones < 400px */
+@media (max-width: 400px) {
+  .edit-property-page h1 {
+    font-size: 20px;
+  }
+
+  .edit-property-form h3 {
+    font-size: 15px;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+  }
+
+  .update-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .amenities-container {
+    gap: 10px;
+  }
+}

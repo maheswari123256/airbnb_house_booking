@@ -1,0 +1,137 @@
+.admin-prop-page {
+  background: #f9fafc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-prop-container {
+  margin-top: 50px;
+}
+
+.admin-prop-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.admin-prop-search {
+  border-radius: 6px;
+}
+
+.admin-prop-refresh-btn {
+  background: #28a745;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 18px;
+}
+
+.admin-prop-refresh-btn:hover {
+  background: #218838;
+  color: #fff;
+}
+
+.admin-prop-table th {
+  background: #007bff;
+  color: white;
+}
+
+.admin-prop-delete-btn {
+  background: #dc3545;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+
+.admin-prop-delete-btn:hover {
+  background: #c82333;
+}
+/* Base styles already defined (your current styles) */
+
+/* Responsive Media Queries */
+
+/* Small devices (phones, max-width: 576px) */
+@media (max-width: 576px) {
+  .admin-prop-container {
+    margin-top: 20px; /* reduce top margin */
+    padding: 0 10px; /* add padding for small screens */
+  }
+
+  .admin-prop-title {
+    font-size: 20px; /* slightly smaller title */
+  }
+
+  .admin-prop-search {
+    width: 100%; /* search takes full width */
+    margin-bottom: 10px;
+  }
+
+  .admin-prop-refresh-btn,
+  .admin-prop-delete-btn {
+    padding: 6px 12px; /* smaller buttons */
+    font-size: 14px;
+  }
+
+  .admin-prop-table th,
+  .admin-prop-table td {
+    font-size: 12px; /* smaller text in table */
+  }
+}
+
+/* Medium devices (tablets, max-width: 768px) */
+@media (max-width: 768px) {
+  .admin-prop-container {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  .admin-prop-title {
+    font-size: 22px;
+  }
+
+  .admin-prop-search {
+    width: 80%;
+  }
+
+  .admin-prop-refresh-btn,
+  .admin-prop-delete-btn {
+    padding: 5px 14px;
+    font-size: 15px;
+  }
+
+  .admin-prop-table th,
+  .admin-prop-table td {
+    font-size: 13px;
+  }
+}
+
+/* Large devices (desktops, max-width: 1200px) */
+@media (max-width: 1200px) {
+  .admin-prop-container {
+    padding: 0 20px;
+  }
+
+  .admin-prop-title {
+    font-size: 24px;
+  }
+
+  .admin-prop-search {
+    width: 60%;
+  }
+}
+
+/* Extra small devices (very small phones) */
+@media (max-width: 400px) {
+  .admin-prop-title {
+    font-size: 18px;
+  }
+
+  .admin-prop-refresh-btn,
+  .admin-prop-delete-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .admin-prop-table th,
+  .admin-prop-table td {
+    font-size: 11px;
+  }
+}

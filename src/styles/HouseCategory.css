@@ -1,0 +1,144 @@
+/* =========================
+   TYPE HOUSE WRAPPER
+========================= */
+.typeHouse-wrapper {
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+
+/* =========================
+   TITLE
+========================= */
+.typeHouse-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.typeHouse-message {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   CARD CONTAINER
+========================= */
+.typeHouse-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* =========================
+   CARD DESIGN (REDUCED SIZE)
+========================= */
+.typeHouse-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.typeHouse-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+.typeHouse-image {
+  width: 100%;
+  height: 130px; /* Reduced height */
+  object-fit: cover;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+.typeHouse-cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 10px 4px;
+  color: #222;
+}
+
+.typeHouse-description {
+  font-size: 13px;
+  color: #666;
+  margin: 0 10px 6px;
+  line-height: 1.4;
+}
+
+.typeHouse-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 10px 8px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.typeHouse-viewBtn {
+  display: block;
+  margin: 8px 10px 12px;
+  padding: 7px 0;
+  text-align: center;
+  background-color: #ff385c; /* Airbnb style */
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.typeHouse-viewBtn:hover {
+  background-color: #e11d48;
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .typeHouse-title {
+    font-size: 18px;
+  }
+
+  .typeHouse-container {
+    grid-template-columns: 1fr;
+  }
+
+  .typeHouse-image {
+    height: 150px;
+  }
+}
+
+/* Tablet (481px – 768px) */
+@media (max-width: 768px) {
+  .typeHouse-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop (769px – 1024px) */
+@media (max-width: 1024px) {
+  .typeHouse-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large Screens (≥ 1200px) */
+@media (min-width: 1200px) {
+  .typeHouse-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,127 @@
+/* ✅ Login page scope */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login card */
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+/* Input box */
+.login-container .input-box {
+  position: relative;
+  margin: 12px 0;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Password eye */
+.login-container .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Remember + forgot */
+.login-container .options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #9b59b6, #8e44ad);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Error message */
+.message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Signup link */
+.signup {
+  margin-top: 15px;
+}
+/* =========================
+   📱 Mobile (max 480px)
+========================= */
+@media (max-width: 480px) {
+  .signup-container {
+    width: 90%;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .signup-container h2 {
+    font-size: 22px;
+  }
+
+  .signup-container input {
+    font-size: 13px;
+    padding: 10px 10px 10px 36px;
+  }
+
+  .signup-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-footer {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   📱📱 Tablet (481px – 768px)
+========================= */
+@media (max-width: 768px) {
+  .signup-container {
+    width: 420px;
+  }
+}
+
+/* =========================
+   💻 Small Laptop (769px – 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .signup-container {
+    width: 380px;
+  }
+}

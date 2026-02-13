@@ -1,0 +1,156 @@
+/* ===== Existing CSS ===== */
+.amenities-page-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Header bar with title + top-right button */
+.amenities-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.amenities-page-title {
+  margin: 0;
+}
+
+.amenities-top-dashboard-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Add form */
+.amenities-add-form {
+  margin: 20px 0;
+}
+
+.amenities-input-type,
+.amenities-input-icon {
+  padding: 6px;
+  margin-right: 6px;
+}
+
+.amenities-add-button {
+  padding: 4px 10px;
+}
+
+/* Table styling */
+.amenities-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amenities-table th,
+.amenities-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.amenities-table th {
+  background-color: #f0f0f0;
+}
+
+.amenities-icon-image {
+  width: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.amenities-edit-icon-input {
+  width: 70%;
+  padding: 6px;
+}
+
+.amenities-edit-name-input {
+  padding: 6px;
+  width: 95%;
+}
+
+.amenities-delete-button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.amenities-no-data-text {
+  text-align: center;
+}
+
+/* ===== MEDIA QUERIES (Responsive) ===== */
+
+/* Small devices (phones, <600px) */
+@media only screen and (max-width: 599px) {
+  .amenities-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .amenities-top-dashboard-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .amenities-add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .amenities-input-type,
+  .amenities-input-icon,
+  .amenities-add-button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .amenities-edit-icon-input {
+    width: 100%;
+  }
+
+  .amenities-edit-name-input {
+    width: 100%;
+  }
+
+  .amenities-table th,
+  .amenities-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .amenities-icon-image {
+    width: 30px;
+  }
+}
+
+/* Medium devices (tablets, 600px - 899px) */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .amenities-add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .amenities-input-type,
+  .amenities-input-icon,
+  .amenities-add-button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .amenities-edit-icon-input {
+    width: 90%;
+  }
+
+  .amenities-edit-name-input {
+    width: 90%;
+  }
+}
+
+/* Large devices (desktops, >=900px) */
+@media only screen and (min-width: 900px) {
+  /* Keep default styles */
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* 🔒 FULLY SCOPED */
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.signup-container {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Labels */
+.signup-container label {
+  text-align: left;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 8px 0 4px;
+}
+
+/* Input group */
+.signup-container .input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.signup-container .input-group i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff7eb9;
+}
+
+/* Inputs */
+.signup-container input {
+  width: 100%;
+  padding: 12px 12px 12px 38px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+.signup-container input:focus {
+  border-color: #ff4e88;
+}
+
+/* Button */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff7eb9, #ff4e88);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: linear-gradient(135deg, #ff4e88, #e84393);
+}
+
+/* Messages */
+.signup-error {
+  color: red;
+  font-size: 13px;
+}
+
+.signup-success {
+  color: green;
+  font-size: 13px;
+}
+
+/* Footer link */
+.signup-footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+/* =========================
+   📱 Mobile (max 480px)
+========================= */
+@media (max-width: 480px) {
+  .signup-container {
+    width: 90%;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .signup-container h2 {
+    font-size: 22px;
+  }
+
+  .signup-container input {
+    font-size: 13px;
+    padding: 10px 10px 10px 36px;
+  }
+
+  .signup-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-footer {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   📱📱 Tablet (481px – 768px)
+========================= */
+@media (max-width: 768px) {
+  .signup-container {
+    width: 420px;
+  }
+}
+
+/* =========================
+   💻 Small Laptop (769px – 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .signup-container {
+    width: 380px;
+  }
+}

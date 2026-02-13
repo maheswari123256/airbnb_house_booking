@@ -1,0 +1,94 @@
+.admin-wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  height: 100vh;
+  background: #343a40;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  width: 220px;
+}
+
+.admin-sidebar a {
+  display: block;
+  padding: 10px;
+  color: #adb5bd;
+  text-decoration: none;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.admin-sidebar a:hover {
+  background: #495057;
+  color: #fff;
+}
+
+.admin-content {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+.admin-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-quick-actions button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* Small devices (phones, up to 576px) */
+@media (max-width: 576px) {
+  .admin-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .admin-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .admin-quick-actions button {
+    margin-bottom: 8px;
+  }
+}
+
+/* Medium devices (tablets, 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .admin-sidebar {
+    width: 180px;
+  }
+
+  .admin-content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+}
+
+/* Large devices (desktops, 769px to 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .admin-sidebar {
+    width: 200px;
+  }
+
+  .admin-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1201px and above) */
+@media (min-width: 1201px) {
+  .admin-sidebar {
+    width: 220px;
+  }
+
+  .admin-content {
+    margin-left: 240px;
+  }
+}

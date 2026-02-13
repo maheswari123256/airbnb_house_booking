@@ -1,0 +1,176 @@
+/* ===== PAGE LAYOUT ===== */
+.ht-page {
+  display: flex;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+}
+
+/* ===== SIDEBAR ===== */
+.ht-sidebar {
+  width: 250px;
+  background: #343a40;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.ht-sidebar-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ht-sidebar-link {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  border-radius: 0;
+  transition: background 0.3s;
+}
+
+.ht-sidebar-link:hover {
+  background: #495057;
+  border-radius: 5px;
+}
+
+.ht-active-link {
+  background: #0d6efd !important;
+  border-radius: 5px;
+}
+
+/* ===== CONTENT ===== */
+.ht-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f8f9fa;
+  min-width: 0; /* For flexbox overflow */
+}
+
+.ht-content-title {
+  font-weight: bold;
+}
+
+/* ===== BUTTONS ===== */
+.ht-add-btn {
+  font-weight: bold;
+}
+
+.ht-logout-btn {
+  font-weight: bold;
+}
+
+/* ===== INPUT FIELDS ===== */
+.ht-input-house,
+.ht-input-icon {
+  border-radius: 5px;
+}
+
+/* ===== CARDS ===== */
+.ht-add-card,
+.ht-table-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== TABLE ===== */
+.ht-table img.ht-icon-img {
+  border-radius: 5px;
+  object-fit: cover;
+    width: 40px;  /* original size */
+  height: 40px; 
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets and smaller screens */
+@media (max-width: 992px) {
+  .ht-page {
+    flex-wrap: wrap;
+  }
+
+  .ht-sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .ht-content {
+    padding: 15px;
+  }
+
+  .ht-table img.ht-icon-img {
+    width: 28px;  /* reduce */
+    height: 28px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .ht-sidebar {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .ht-sidebar-link {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .ht-content {
+    padding: 10px;
+  }
+
+  .ht-add-card .row.g-2 {
+    flex-direction: column;
+  }
+
+  .ht-add-card input {
+    margin-bottom: 10px;
+  }
+
+  .ht-table {
+    font-size: 14px;
+  }
+
+  .ht-table img.ht-icon-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ht-add-btn,
+  .ht-logout-btn {
+    font-size: 14px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .ht-sidebar {
+    display: none; /* Hide sidebar for very small screens */
+  }
+
+  .ht-content {
+    padding: 5px;
+  }
+
+  .ht-add-card,
+  .ht-table-card {
+    padding: 10px;
+  }
+
+  .ht-table th,
+  .ht-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .ht-add-btn,
+  .ht-logout-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px;
+  }
+}

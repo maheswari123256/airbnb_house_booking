@@ -1,0 +1,247 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+/* =========================
+   AIRBNB STYLE CATEGORY BAR
+========================= */
+.category-wrapper {
+  border-bottom: 1px solid #eee;
+  padding: 14px 40px;
+  background: #fff;
+}
+
+.mySwiper {
+  padding: 0 !important;
+}
+
+.category-slide {
+  width: auto !important;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  padding-bottom: 8px;
+  white-space: nowrap;
+}
+
+.category-item img {
+  width: 45px;
+  height: 26px;
+  object-fit: contain;
+  opacity: 0.75;
+  transition: 0.2s ease;
+}
+
+.category-item:hover img {
+  opacity: 1;
+}
+
+.category-item:hover span {
+  color: #000;
+  font-weight: 500;
+}
+
+/* swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+/* =========================
+   SWIPER BASE STYLES
+========================= */
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   PROPERTY CARD GRID
+========================= */
+#houseList {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* =========================
+   PROPERTY CARD
+========================= */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+  background: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* =========================
+   WISHLIST ICON
+========================= */
+.card .wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.card .wishlist.active {
+  color: red;
+}
+
+/* =========================
+   CARD INFO
+========================= */
+.card .info {
+  padding: 10px;
+}
+
+.card .price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* =====================================================
+   MOBILE DEVICES (≤ 480px)
+===================================================== */
+@media (max-width: 480px) {
+
+  header {
+    padding: 8px 12px;
+  }
+
+  .category-wrapper {
+    padding: 12px 16px;
+  }
+
+  .category-item {
+    font-size: 11px;
+  }
+
+  .category-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #houseList {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card .info {
+    padding: 8px;
+  }
+
+  .card .price {
+    font-size: 14px;
+  }
+}
+
+/* =====================================================
+   SMALL TABLETS (481px – 768px)
+===================================================== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .category-wrapper {
+    padding: 14px 24px;
+  }
+
+  .category-item img {
+    width: 26px;
+    height: 26px;
+  }
+
+  #houseList {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+  }
+
+  .card img {
+    height: 170px;
+  }
+}
+
+/* =====================================================
+   TABLETS / SMALL LAPTOPS (769px – 1024px)
+===================================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .category-wrapper {
+    padding: 14px 32px;
+  }
+
+  #houseList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+
+/* =====================================================
+   DESKTOPS (≥ 1025px)
+===================================================== */
+@media (min-width: 1025px) {
+
+  .category-wrapper {
+    padding: 14px 40px;
+  }
+
+  #houseList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
