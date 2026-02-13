@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/adminManageProperties.css";
+import "../styles/AdminManageProperties.css";
 
 const AdminManageProperties = () => {
   const [propertiesData, setPropertiesData] = useState([]);
